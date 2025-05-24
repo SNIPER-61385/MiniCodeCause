@@ -9,3 +9,5 @@ res://Nodes/enemy_body.gd
 res://Globals/globals.gd
 res://Nodes/powerups.tscn
 res://Nodes/powerups.gd
+res://Nodes/item_container.tscn
+res://Nodes/chest.tscn
