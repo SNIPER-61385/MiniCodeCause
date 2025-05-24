@@ -6,6 +6,9 @@ res://Nodes/player.tscn
 res://Nodes/enemy_body.tscn
 res://Nodes/powerups.tscn
 res://Nodes/game_over.tscn
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 res://Nodes/ui.tscn
 res://Nodes/MapTiles.tres
