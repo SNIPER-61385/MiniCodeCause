@@ -41,4 +41,4 @@ position = Vector2(10, 14)
 metadata/_edit_lock_ = true
 
 [node name="enemyBody" parent="Enemy" instance=ExtResource("3_t3bw1")]
-position = Vector2(140, 95)
+position = Vector2(110, 109)

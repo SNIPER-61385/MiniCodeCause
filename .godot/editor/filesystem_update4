@@ -1,11 +1,1 @@
 res://Nodes/mainGame.tscn
-res://Nodes/map1.tscn
-res://Nodes/player.tscn
-res://Nodes/ui.tscn
-res://Nodes/MapTiles.tres
-res://Nodes/enemy_body.tscn
-res://Scripts/player.gd
-res://Nodes/enemy_body.gd
-res://Globals/globals.gd
-res://Nodes/powerups.tscn
-res://Nodes/powerups.gd
