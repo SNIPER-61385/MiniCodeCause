@@ -1,0 +1,81 @@
+[gd_scene load_steps=5 format=3 uid="uid://b4w75c1m2px3p"]
+
+[ext_resource type="Script" path="res://Scripts/player.gd" id="1_aah0v"]
+[ext_resource type="PackedScene" uid="uid://b4el12mq2327u" path="res://Nodes/ui.tscn" id="2_mexjx"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ci51r"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_xtb6l"]
+animations = [{
+"frames": [],
+"loop": true,
+"name": &"e_walk",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"idle",
+"speed": 1.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"n_walk",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"ne_walk",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"nw_walk",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"s_walk",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"se_walk",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"sw_walk",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"w_walk",
+"speed": 5.0
+}]
+
+[node name="Player" type="Node2D"]
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+script = ExtResource("1_aah0v")
+
+[node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
+
+[node name="UI" parent="CharacterBody2D/Camera2D" instance=ExtResource("2_mexjx")]
+offset_left = -576.0
+offset_top = -512.0
+offset_right = -576.0
+offset_bottom = -512.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+shape = SubResource("RectangleShape2D_ci51r")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D"]
+sprite_frames = SubResource("SpriteFrames_xtb6l")
+animation = &"nw_walk"
+autoplay = "idle"
+
+[node name="Timer" type="Timer" parent="CharacterBody2D"]
+process_callback = 0
+one_shot = true
+
+[connection signal="timeout" from="CharacterBody2D/Timer" to="CharacterBody2D" method="_on_timer_timeout"]

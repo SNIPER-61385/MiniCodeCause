@@ -1,0 +1,6 @@
+res://Nodes/player.tscn
+res://Nodes/player.gd
+res://Nodes/mainGame.tscn
+res://Nodes/map1.tscn
+res://Nodes/ui.tscn
+res://Scripts/player.gd

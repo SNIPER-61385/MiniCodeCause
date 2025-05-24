@@ -1,0 +1,15 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1748047522
+icon.png::CompressedTexture2D::4299679920382257591::1748045282::1748045282::1::::<><>::
+::res://Assets/::1748025684
+::res://Assets/Art/::1748025684
+::res://Assets/Art/Animations/::1748021422
+::res://Assets/Music/::1748014559
+::res://Assets/Player/::1748021445
+::res://Nodes/::1748047487
+mainGame.tscn::PackedScene::8898822466680780748::1748047339::0::1::::<><>::
+map1.tscn::PackedScene::5486068543276323801::1748047339::0::1::::<><>::
+player.gd::GDScript::-1::1748047487::0::1::::<>CharacterBody2D<>::
+player.tscn::PackedScene::4469310123164567371::1748047527::0::1::::<><>::res://Nodes/player.gd<>uid://b4el12mq2327u::::res://Nodes/ui.tscn
+ui.tscn::PackedScene::4430870415206525264::1748047339::0::1::::<><>::
+::res://Scripts/::1748047522
