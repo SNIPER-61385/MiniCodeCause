@@ -1,7 +1,11 @@
+Node2D
+Area2D
+CollisionShape2D
+Sprite2D
+CharacterBody2D
+TileMapLayer
 Label
 Timer
 Panel
-CharacterBody2D
-CollisionShape2D
 AnimatedSprite2D
 Camera2D
