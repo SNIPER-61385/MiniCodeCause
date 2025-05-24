@@ -2,7 +2,7 @@ extends Node
 
 var PlayerPos : Vector2
 
-var playerHealth : int = 1 :
+var playerHealth : int = 100 :
 	get:
 		return playerHealth
 	set(value):
