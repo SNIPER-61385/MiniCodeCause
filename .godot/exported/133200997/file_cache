@@ -1,0 +1,9 @@
+res://Nodes/enemy_body.tscn::81e0b98381249297cfc13bcf986f21e7::1748083604::res://.godot/exported/133200997/export-f9bc42fb8d7b1dc2d0687f62171fe0ca-enemy_body.scn
+res://Nodes/mainGame.tscn::eda10cf721a73b9d81dc907dc93278b3::1748083604::res://.godot/exported/133200997/export-60d0441ac11fc9cc89b74e8cd9bc8755-mainGame.scn
+res://Nodes/map1.tscn::227bcb273210ec1133851dce94da3713::1748055680::res://.godot/exported/133200997/export-101af5ae2e292f2b0cd587117e58f1ee-map1.scn
+res://Nodes/MapTiles.tres::85430f8f51c0289e9fbfcd6466144fad::1748068720::res://.godot/exported/133200997/export-0d19db6f1175cd7f168e301d1b473dd1-MapTiles.res
+res://Nodes/player.tscn::a8e1e2aec74fad780dbb76ad11d02ac4::1748083604::res://.godot/exported/133200997/export-08a8621fc4cea3a10b8827d08b903ec5-player.scn
+res://Nodes/powerups.tscn::ecfd0e621d9e36c98a2a68ac4b41d84f::1748083604::res://.godot/exported/133200997/export-76ddc86c37c109e13d6cae2902390a30-powerups.scn
+res://Nodes/item_container.tscn::6eb6a8aa34429006a4ffe44130611199::1748083604::res://.godot/exported/133200997/export-0a36c19a7a197a1bcfa12d116a66ea1a-item_container.scn
+res://Nodes/chest.tscn::07cd628e4c985e1bae96568f644c8df2::1748085018::res://.godot/exported/133200997/export-5f216cc13be9a61ee109fc1733ecccc2-chest.scn
+res://Nodes/ui.tscn::3e2fb257ffce730d8276b7514e142d3a::1748055681::res://.godot/exported/133200997/export-5c33218dd5ec1e0d31a637bc149702ee-ui.scn

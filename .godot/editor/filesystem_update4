@@ -1,8 +1,28 @@
 res://Nodes/mainGame.tscn
 res://Nodes/player.tscn
+<<<<<<< HEAD
+<<<<<<< Updated upstream
+=======
 res://Nodes/enemy_body.tscn
 res://Nodes/powerups.tscn
+res://Nodes/game_over.tscn
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
+res://Nodes/ui.tscn
+res://Nodes/MapTiles.tres
+=======
+>>>>>>> main
+res://Nodes/enemy_body.tscn
+res://Nodes/powerups.tscn
+<<<<<<< HEAD
+res://Nodes/powerups.gd
+res://Nodes/item_container.tscn
+res://Nodes/chest.tscn
+=======
 res://Scripts/player.gd
 res://Nodes/game_over.tscn
 res://Globals/globals.gd
 res://Nodes/ui.tscn
+>>>>>>> main
