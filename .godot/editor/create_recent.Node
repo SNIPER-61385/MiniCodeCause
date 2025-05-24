@@ -1,3 +1,6 @@
+Button
+Label
+Panel
 Node2D
 AnimationPlayer
 StaticBody2D
@@ -6,8 +9,6 @@ Sprite2D
 Area2D
 CharacterBody2D
 TileMapLayer
-Label
 Timer
-Panel
 AnimatedSprite2D
 Camera2D

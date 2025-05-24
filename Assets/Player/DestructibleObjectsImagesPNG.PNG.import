@@ -2,7 +2,11 @@
 
 importer="texture"
 type="CompressedTexture2D"
+<<<<<<< HEAD
 uid="uid://db4d6tyvxt5ti"
+=======
+uid="uid://c3yxisknbythu"
+>>>>>>> main
 path="res://.godot/imported/DestructibleObjectsImagesPNG.PNG-0a9050bedd374907b141000c75cf259a.ctex"
 metadata={
 "vram_texture": false

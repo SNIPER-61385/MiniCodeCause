@@ -19,7 +19,8 @@ var timeRemaining = 60
 func _ready():
 	$Timer.start()
 	$AnimatedSprite2D.visible = false
-
+	$Camera2D/UI/GameOver.visible = false
+	
 func _process(delta):
 	#move
 	var direction = Input.get_vector("left", "right", "up", "down")
@@ -35,6 +36,20 @@ func _process(delta):
 	
 	#ui
 	setLabels()
+	
+	#death
+	isDead = health <= 0 || timeRemaining == 0
+	if (isDead):
+		gameOver()
+		
+func gameOver():
+		#show game over screen
+		$Camera2D/UI/GameOver.visible = true
+		#hide HUD
+		$Camera2D/UI/BackgroungHUD.visible = false
+		#show score
+		#show "back to main menu" button
+		#go back to the main menu
 	
 
 func setLabels():

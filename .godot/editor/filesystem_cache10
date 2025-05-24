@@ -1,4 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 ::res://::1748080726
@@ -88,3 +89,38 @@ player.gd::GDScript::7542975737449273303::1748092991::0::1::::<>CharacterBody2D<
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
+=======
+::res://::1748086987
+icon.png::CompressedTexture2D/CompressedTexture2D::4299679920382257591::1748086900::1748086988::1::::<><><>0<>0<>f87df8c9dfdaac844e765a09a9bc477e<>res://.godot/imported/icon.png-487276ed1e3a0c39cad0279d744ee560.ctex::
+README.md::TextFile::-1::1748086900::0::1::::<><><>0<>0<><>::
+::res://Assets/::1748086900
+::res://Assets/Items/::1748086900
+Destructible Objects Sprite Sheet.png::CompressedTexture2D/CompressedTexture2D::8416600935995746853::1748086900::1748086988::1::::<><><>0<>0<>d4b2d8a43b937297094c8599f6b2db5e<>res://.godot/imported/Destructible Objects Sprite Sheet.png-031bed750b408db77af588395e21c162.ctex::
+weapons.png::CompressedTexture2D/CompressedTexture2D::4461438157907307686::1748086900::1748086988::1::::<><><>0<>0<>51738b4629750d795463a5a7f1be6971<>res://.godot/imported/weapons.png-c19bf5388e945b9a89fe7c5bde5c53cd.ctex::
+::res://Assets/Player/::1748086900
+Characters fullsheet.png::CompressedTexture2D/CompressedTexture2D::555998026383756031::1748086900::1748086988::1::::<><><>0<>0<>3ebe3c5ce94ae0a9473311b4f5eb00dc<>res://.godot/imported/Characters fullsheet.png-43f3ba537287fb72cc19a62915b74060.ctex::
+DestructibleObjectsImagesPNG.PNG::CompressedTexture2D::6789085793994720446::1748086900::1748086988::1::::<><><>0<>0<>6169757bb61a72d4cb51eefccbcc3e39<>res://.godot/imported/DestructibleObjectsImagesPNG.PNG-0a9050bedd374907b141000c75cf259a.ctex::
+Player1.png::CompressedTexture2D/CompressedTexture2D::9082154189489230847::1748086900::1748086988::1::::<><><>0<>0<>d505dadf75eb3fef3f24a1c55f58a11a<>res://.godot/imported/Player1.png-96c66ea357608149903630606b548dcb.ctex::
+::res://Assets/Terrains/::1748086900
+assets.png::CompressedTexture2D/CompressedTexture2D::2872567929174867967::1748086900::1748086988::1::::<><><>0<>0<>ec0cbbad33b8a21e159fb3b4a10e1e6c<>res://.godot/imported/assets.png-b4779554392b079e0add49b5514f78d2.ctex::
+Grassland-Top-Down-Tileset-Pixel-Art2_nobg.png::CompressedTexture2D/CompressedTexture2D::4219190328269329616::1748086900::1748086989::1::::<><><>0<>0<>04ac16372e1aafee308e546859379a5d<>res://.godot/imported/Grassland-Top-Down-Tileset-Pixel-Art2_nobg.png-533812e631d467f12c2a2fd1e503aa31.ctex::
+Grassland-Top-Down-Tileset-Pixel-Art3_nobg.png::CompressedTexture2D/CompressedTexture2D::7949681595567283030::1748086900::1748086989::1::::<><><>0<>0<>9e8a31ad62020398a89c722f4bbfa93a<>res://.godot/imported/Grassland-Top-Down-Tileset-Pixel-Art3_nobg.png-38fbf0c50ac3325d366e040e29c75227.ctex::
+GroundTiles1.png::CompressedTexture2D/CompressedTexture2D::3065548696350818141::1748086900::1748086988::1::::<><><>0<>0<>373b4d9f4ffdf1fb333ed06e1a4c618d<>res://.godot/imported/GroundTiles1.png-cf10caf7e3f69dc38b9f6502f4a3d83c.ctex::
+ground_tiles.png::CompressedTexture2D/CompressedTexture2D::6564071426851775269::1748086900::1748086988::1::::<><><>0<>0<>fa959f5f6ebb1c16e40587cda51c0884<>res://.godot/imported/ground_tiles.png-ab366f8593db0d31f3c43dbb980c7e7b.ctex::
+PlaceHolderTerrain.png::CompressedTexture2D/CompressedTexture2D::3082102084123350832::1748086900::1748086988::1::::<><><>0<>0<>0196e97b1efc9ad3d63e630597c5d81c<>res://.godot/imported/PlaceHolderTerrain.png-2a3b1ced40bdc37a97563a6aba138ac1.ctex::
+tiles.png::CompressedTexture2D/CompressedTexture2D::7626430047304501354::1748086900::1748086988::1::::<><><>0<>0<>985ffbb3a6f78140b24ba7922f1b04ec<>res://.godot/imported/tiles.png-79f214512ad641785dafe0130edc8f1b.ctex::
+::res://Globals/::1748086900
+globals.gd::GDScript::7753860958142105890::1748086900::0::1::::<>Node<><>0<>0<><>::
+::res://Nodes/::1748086900
+enemy_body.gd::GDScript::7310635444812761036::1748086900::0::1::::enemy<>CharacterBody2D<><>0<>0<><>::
+enemy_body.tscn::PackedScene::2047712493330701937::1748086900::0::1::::<><><>0<>0<><>::uid://d2np0t8p3ailj::::res://Assets/Player/Player1.png<>uid://dcfldk6f1o74c::::res://Nodes/enemy_body.gd
+mainGame.tscn::PackedScene::8898822466680780748::1748086900::0::1::::<><><>0<>0<><>::uid://bj581hkme7siy::::res://Assets/Terrains/PlaceHolderTerrain.png<>uid://b4w75c1m2px3p::::res://Nodes/player.tscn<>uid://bssob8svo2sk3::::res://Nodes/powerups.tscn<>uid://4f6r4t2wsqmj::::res://Nodes/enemy_body.tscn
+map1.tscn::PackedScene::5486068543276323801::1748086900::0::1::::<><><>0<>0<><>::
+MapTiles.tres::TileSet::7650787845187293940::1748086900::0::1::::<><><>0<>0<><>::
+player.tscn::PackedScene::4469310123164567371::1748086900::0::1::::<><><>0<>0<><>::uid://dfp4yc4d65w5d::::res://Scripts/player.gd<>uid://b4el12mq2327u::::res://Nodes/ui.tscn<>uid://d2np0t8p3ailj::::res://Assets/Player/Player1.png
+powerups.gd::GDScript::3167143582174862694::1748086900::0::1::::<>Area2D<><>0<>0<><>::
+powerups.tscn::PackedScene::3687832254494364560::1748086900::0::1::::<><><>0<>0<><>::uid://blegnlibg2cag::::res://Nodes/powerups.gd<>uid://d4cvkinw74vsm::::res://Assets/Items/orb2.png
+ui.tscn::PackedScene::4430870415206525264::1748086900::0::1::::<><><>0<>0<><>::
+::res://Scripts/::1748086900
+player.gd::GDScript::7542975737449273303::1748086900::0::1::::<>CharacterBody2D<><>0<>0<><>::
+>>>>>>> main
