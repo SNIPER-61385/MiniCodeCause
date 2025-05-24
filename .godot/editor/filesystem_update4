@@ -1,1 +1,8 @@
 res://Nodes/mainGame.tscn
+res://Nodes/player.tscn
+res://Nodes/enemy_body.tscn
+res://Nodes/powerups.tscn
+res://Scripts/player.gd
+res://Nodes/game_over.tscn
+res://Globals/globals.gd
+res://Nodes/ui.tscn
