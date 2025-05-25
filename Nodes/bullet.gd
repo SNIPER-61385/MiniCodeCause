@@ -5,6 +5,7 @@ var direction: Vector2
 
 func _ready() -> void:
 	self.connect("body_entered", _on_body_entered)
+	self.connect("area_entered", _on_body_entered)
 	
 func _process(_delta) -> void:
 	self.position += direction
@@ -13,7 +14,6 @@ func _process(_delta) -> void:
 func _on_body_entered(body) -> void:
 	if body.has_method("hit") == true:
 		body.hit()
-	print("passing",body.name)
 	queue_free()
 
 		

@@ -9,7 +9,7 @@ var rotation_speed : int = 3
 var orbTypeList = ['life','life','bullet','bullet','bullet','speed']
 var orbType = orbTypeList[randi() % orbTypeList.size()]
 var directio : Vector2
-var distance : int = randi_range(200,300)
+var distance : int = randi_range(10,20)
 
 func _ready() -> void:
 	if orbType == 'life':
@@ -18,6 +18,8 @@ func _ready() -> void:
 		$orbImage.modulate = Color(0.1,0.1,0.8)
 	elif orbType == 'speed':
 		$orbImage.modulate = Color(0.8,0.1,0.1)
+	self.connect("body_entered",_on_body_entered)
+	self.connect("area_entered",_on_area_entered)
 		
 	#dropping animation
 	var targetPos = position + directio * distance
@@ -31,12 +33,14 @@ func _process(delta: float) -> void:
 	
 func _on_body_entered(_body: Node2D) -> void:
 	if orbType == 'life':
-		Globals.healthAmount += 10
+		Globals.playerHealth += 10
 	elif orbType == 'laser':
-		Globals.laserCount += 5
+		Globals.bulletCount += 5
 	elif orbType == 'grenade':
-		Globals.GrenadeCount += 1
+		Globals.playerSpeed += 1
 	#print(body.name)
-	#print(Globals.laserCount)
+
 	#print(orbType)
+	#queue_free()
+func _on_area_entered(_body: Node2D) -> void:
 	queue_free()
