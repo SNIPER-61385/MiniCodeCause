@@ -1,9 +1,19 @@
-[gd_scene format=3 uid="uid://2ji6ryskuv0i"]
+[gd_scene load_steps=4 format=3 uid="uid://2ji6ryskuv0i"]
+
+[ext_resource type="Script" uid="uid://bbwirdnqmqam4" path="res://Nodes/item_container.gd" id="1_gv3js"]
+[ext_resource type="Texture2D" uid="uid://76v1ux8qbnpu" path="res://Assets/Items/ak36.png" id="2_cpfbn"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cpfbn"]
+size = Vector2(56, 20)
 
 [node name="ItemContainer" type="StaticBody2D"]
 collision_layer = 8
-collision_mask = 32
+collision_mask = 33
+script = ExtResource("1_gv3js")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_cpfbn")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(3, 0)
+shape = SubResource("RectangleShape2D_cpfbn")

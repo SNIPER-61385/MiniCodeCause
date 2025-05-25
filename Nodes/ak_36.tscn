@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://b48m0x4wl1xno"]
+
+[ext_resource type="Texture2D" uid="uid://76v1ux8qbnpu" path="res://Assets/Items/ak36.png" id="1_p4i5k"]
+[ext_resource type="Script" uid="uid://w8ro5ykrrm8h" path="res://Nodes/weapon.gd" id="2_nuhop"]
+
+[node name="ak36" type="Sprite2D"]
+texture = ExtResource("1_p4i5k")
+offset = Vector2(35.145, 0)
+flip_h = true
+script = ExtResource("2_nuhop")
+
+[node name="Marker2D" type="Marker2D" parent="."]
+position = Vector2(58, 0)

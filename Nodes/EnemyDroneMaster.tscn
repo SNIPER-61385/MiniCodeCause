@@ -1,0 +1,29 @@
+[gd_scene load_steps=2 format=3 uid="uid://b0d7xod0gb6ta"]
+
+[ext_resource type="Script" uid="uid://c8w271mnglfaa" path="res://Nodes/enemy_drone_master.gd" id="1_01788"]
+
+[node name="Drone" type="CharacterBody2D" groups=["Scouts"]]
+collision_layer = 2
+collision_mask = 11
+script = ExtResource("1_01788")
+
+[node name="Droneimage" type="Sprite2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-28, 16)
+
+[node name="spawnmarkers" type="Node2D" parent="."]
+
+[node name="scanArea" type="Area2D" parent="."]
+collision_layer = 2
+
+[node name="scanCollision" type="CollisionShape2D" parent="scanArea"]
+
+[node name="projectiles" type="Node2D" parent="."]
+
+[node name="LaserDestroyTimer" type="Timer" parent="."]
+
+[node name="TimerLaser" type="Timer" parent="."]
+
+[connection signal="body_entered" from="scanArea" to="." method="_on_scan_area_body_entered"]
+[connection signal="body_exited" from="scanArea" to="." method="_on_scan_area_body_exited"]

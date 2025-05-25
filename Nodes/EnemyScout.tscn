@@ -1,0 +1,38 @@
+[gd_scene load_steps=6 format=3 uid="uid://bcd7rr5itp8ah"]
+
+[ext_resource type="PackedScene" uid="uid://b0d7xod0gb6ta" path="res://Nodes/EnemyDroneMaster.tscn" id="1_dvmhi"]
+[ext_resource type="Script" uid="uid://cnc5fdexr1ger" path="res://Nodes/enemy_scout.gd" id="2_7adbw"]
+[ext_resource type="Texture2D" uid="uid://csk6kilgjjj87" path="res://Assets/Player/scout.png" id="2_iqgnm"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_7adbw"]
+radius = 65.3758
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_iqgnm"]
+radius = 508.284
+
+[node name="Drone" groups=["entity"] instance=ExtResource("1_dvmhi")]
+script = ExtResource("2_7adbw")
+
+[node name="Droneimage" parent="." index="0"]
+position = Vector2(-11, 46)
+rotation = 1.5708
+texture = ExtResource("2_iqgnm")
+
+[node name="CollisionShape2D" parent="." index="1"]
+position = Vector2(-55, 20)
+shape = SubResource("CircleShape2D_7adbw")
+
+[node name="Marker2D" type="Marker2D" parent="spawnmarkers" index="0"]
+position = Vector2(73, -10)
+
+[node name="Marker2D2" type="Marker2D" parent="spawnmarkers" index="1"]
+position = Vector2(78, 36)
+
+[node name="scanArea" parent="." index="3"]
+metadata/_edit_lock_ = true
+metadata/_edit_group_ = true
+
+[node name="scanCollision" parent="scanArea" index="0"]
+shape = SubResource("CircleShape2D_iqgnm")
+
+[connection signal="timeout" from="TimerLaser" to="." method="_on_timerLaser_timeout"]

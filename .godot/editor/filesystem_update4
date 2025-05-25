@@ -1,28 +1,20 @@
-res://Nodes/mainGame.tscn
-res://Nodes/player.tscn
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-=======
-res://Nodes/enemy_body.tscn
-res://Nodes/powerups.tscn
-res://Nodes/game_over.tscn
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-res://Nodes/ui.tscn
-res://Nodes/MapTiles.tres
-=======
->>>>>>> main
-res://Nodes/enemy_body.tscn
-res://Nodes/powerups.tscn
-<<<<<<< HEAD
-res://Nodes/powerups.gd
-res://Nodes/item_container.tscn
 res://Nodes/chest.tscn
-=======
-res://Scripts/player.gd
-res://Nodes/game_over.tscn
-res://Globals/globals.gd
+res://Nodes/mainGame.tscn
 res://Nodes/ui.tscn
->>>>>>> main
+res://Nodes/player.tscn
+res://Scripts/player.gd
+res://Nodes/item_container.tscn
+res://Nodes/item_container.gd
+res://Nodes/bullet.tscn
+res://Nodes/bullet.gd
+res://Nodes/main_game.gd
+res://Nodes/EnemyScout.tscn
+res://Nodes/EnemyDroneMaster.tscn
+res://Nodes/enemy_drone_master.gd
+res://Nodes/enemy_body.tscn
+res://Nodes/Mainplayer.gd
+res://Nodes/player.gd
+res://Nodes/weapon.gd
+res://Nodes/ak_36.tscn
+res://Nodes/chest.gd
+res://Nodes/enemy_scout.gd
