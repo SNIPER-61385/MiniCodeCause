@@ -48,8 +48,8 @@ func _process(_delta):
 	Globals.PlayerPos = self.global_position
 	
 	#keep on setting playerHealth and speed so that they can be updated in global script
-	Globals.playerHealth = health
-	Globals.playerSpeed = speed
+	#Globals.playerHealth = health
+	#Globals.playerSpeed = speed
 	
 	#ui
 	#setLabels()

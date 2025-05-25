@@ -3,7 +3,7 @@ extends CanvasLayer
 #colors
 var green: Color = Color("6bbfa3") 
 var red : Color = Color(1,0,0,1) # R G B A (rgb alpha)
-
+signal dayTimeEnd
 
 @onready var laserCountLabel : Label = $LaserCounter/LaserCount/Count
 @onready var dayTimer:= $Timer/TimerLabel
@@ -14,6 +14,7 @@ var red : Color = Color(1,0,0,1) # R G B A (rgb alpha)
 var i : int
 
 func _ready() -> void:
+	$Timer/Daytime.connect("timeout",_onDaytimeEnd)
 	updateLaserCount()
 	updateHealth()
 	updateScore()
@@ -46,15 +47,6 @@ func updateNodeColor(node, amount: int) -> void:
 	else:
 		node.modulate = red
 	
-#recursive timer timout : Krishna moved to node level1
-#func reload():
-	#if Globals.laserCount < Globals.maxLaserCount:
-		#Globals.laserCount += 1
-		#laserCountLabel.text = str(Globals.laserCount) 
-			#
-	#if Globals.GrenadeCount <=Globals.maxGrenadeCount:
-		#Globals.GrenadeCount += 1 
-		#grenadeCountLabel.text = str(Globals.GrenadeCount)
-#
-	#if Globals.laserCount < Globals.maxLaserCount or Globals.GrenadeCount < Globals.maxGrenadeCount:
-		#$Laser.start()
+	
+func _onDaytimeEnd():
+	dayTimeEnd.emit()

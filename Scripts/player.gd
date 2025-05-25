@@ -12,7 +12,7 @@ var playerState
 var isDead:bool
 
 # use playerHealth from globals
-var health = Globals.playerHealth
+var health #= Globals.playerHealth
 var maxHealth = 10
 var score:int = 0
 var timeRemaining = 60
@@ -32,9 +32,9 @@ func _process(_delta):
 	#sets player position in global script for using in other scenes
 	Globals.PlayerPos = self.global_position
 	
-	#keep on setting playerHealth and speed so that they can be updated in global script
-	Globals.playerHealth = health
-	Globals.playerSpeed = speed
+	##keep on setting playerHealth and speed so that they can be updated in global script
+	#Globals.playerHealth = health
+	#Globals.playerSpeed = speed
 	
 	#ui
 	setLabels()

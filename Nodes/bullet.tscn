@@ -16,3 +16,7 @@ texture = ExtResource("1_0meq5")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_0meq5")
+
+[node name="BulletKill" type="Timer" parent="."]
+wait_time = 4.0
+one_shot = true

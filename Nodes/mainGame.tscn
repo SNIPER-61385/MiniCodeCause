@@ -101,3 +101,7 @@ position = Vector2(-20, -78)
 [node name="Chests" type="Node2D" parent="."]
 
 [node name="UI" parent="." instance=ExtResource("7_y0uyv")]
+
+[node name="DirectionalLight2D" type="DirectionalLight2D" parent="."]
+energy = 0.44
+blend_mode = 1
