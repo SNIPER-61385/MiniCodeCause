@@ -4,6 +4,9 @@
 [ext_resource type="Texture2D" uid="uid://bej0445wh6wbr" path="res://Assets/Items/chestOpen.png" id="2_4r7y4"]
 [ext_resource type="Script" uid="uid://dlxwlmxl7y2ug" path="res://Nodes/chest.gd" id="2_jpchp"]
 
+[sub_resource type="Animation" id="Animation_bff2l"]
+length = 0.001
+
 [sub_resource type="Animation" id="Animation_jpchp"]
 resource_name = "chestOpen"
 tracks/0/type = "value"
@@ -18,9 +21,6 @@ tracks/0/keys = {
 "update": 1,
 "values": [1, 2, 0, 1, 2, 3, 4]
 }
-
-[sub_resource type="Animation" id="Animation_bff2l"]
-length = 0.001
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_a8e86"]
 _data = {
