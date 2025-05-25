@@ -4,6 +4,10 @@ extends CharacterBody2D
 @onready var scoreLabel = $Camera2D/UI/BackgroungHUD/Score
 @onready var healthLabel = $Camera2D/UI/BackgroungHUD/Health
 
+signal shoot(pos)
+
+var shootFreq : bool = true
+
 # use playerSpeed from globals
 var speed = Globals.playerSpeed
 var playerState
@@ -21,11 +25,23 @@ func _ready():
 	$AnimatedSprite2D.visible = false
 	$Camera2D/UI/GameOver.visible = false
 	
+	#ShootTimerConnect
+	$shootTimer.connect("timeout",_shootFreq)
+	
 func _process(delta):
 	#move
 	var direction = Input.get_vector("left", "right", "up", "down")
 	move(direction)
 	playAnimation(direction)
+	
+	#shoot emmited to mainGame
+	
+	if Input.is_action_pressed("shoot") and shootFreq:
+		var pos = $ak36/Marker2D.global_position
+		var shootDirec = (get_global_mouse_position() - self.global_position).normalized()
+		shoot.emit(pos, shootDirec)
+		$shootTimer.start()
+		shootFreq = false
 	
 	#sets player position in global script for using in other scenes
 	Globals.PlayerPos = self.global_position
@@ -51,6 +67,9 @@ func gameOver():
 		#show "back to main menu" button
 		#go back to the main menu
 	
+#shootTimer Connected on ready
+func _shootFreq() -> void:
+	shootFreq = true
 
 func setLabels():
 	healthLabel.text = str(health, "/", maxHealth)
