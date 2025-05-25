@@ -1,28 +1,13 @@
 res://Nodes/mainGame.tscn
+res://Nodes/enemy_orb.tscn
+res://Scripts/enemy.tscn
+res://enemy.gd
+res://enemyorb/Bullet.tscn
+res://enemyorb/Enemy.tscn
+res://enemyorb/Enemy.gd
+res://Nodes/enemy_body.gd
+res://Monster/Enemy.gd
+res://Monster/Enemy.tscn
+res://Monster/Bullet.tscn
 res://Nodes/player.tscn
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-=======
-res://Nodes/enemy_body.tscn
-res://Nodes/powerups.tscn
-res://Nodes/game_over.tscn
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-res://Nodes/ui.tscn
-res://Nodes/MapTiles.tres
-=======
->>>>>>> main
-res://Nodes/enemy_body.tscn
-res://Nodes/powerups.tscn
-<<<<<<< HEAD
-res://Nodes/powerups.gd
-res://Nodes/item_container.tscn
-res://Nodes/chest.tscn
-=======
 res://Scripts/player.gd
-res://Nodes/game_over.tscn
-res://Globals/globals.gd
-res://Nodes/ui.tscn
->>>>>>> main
