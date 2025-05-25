@@ -7,9 +7,9 @@ const bullet_scene = preload("res://Monster/Bullet.tscn")
 @onready var rotater = $Rotater
 
 
-const rotate_speed = 200
-const shoot_timer_wait_time = 0.2
-const spawn_point_count = 4
+const rotate_speed = 100
+const shoot_timer_wait_time = 0.5
+const spawn_point_count = 1
 const radius = 50
 const MonsterSpeed = 50
 

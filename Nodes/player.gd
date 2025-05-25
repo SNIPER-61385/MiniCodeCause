@@ -131,3 +131,12 @@ func heal(addHealth):
 
 func addScore(aScore):
 	score += aScore
+
+
+
+func _on_PlayerArea_area_entered(area: Area2D) -> void:
+	if(area.name == "BulletArea"):
+		area.get_parent().queue_free()
+		Globals.playerHealth -= 1
+	if(Globals.playerHealth <= 0):
+		gameOver()

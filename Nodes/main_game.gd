@@ -38,6 +38,7 @@ func _onDayTimeEnd() -> void:
 	$DirectionalLight2D.energy = 0.5
 	var enemy: = enemies.instantiate()
 	enemy.scale = Vector2(0.25,0.25)
-	enemy.position = Vector2(0,0)
+	
+	enemy.position = Globals.PlayerPos + Vector2(randf_range(-300, 300),randf_range(-300, 300))
 	$Enemy.call_deferred("add_child",enemy)
 	
