@@ -5,7 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://b4w75c1m2px3p" path="res://Nodes/player.tscn" id="2_ph6g6"]
 [ext_resource type="PackedScene" uid="uid://jrrgglnoy2yj" path="res://Nodes/chest.tscn" id="3_1aavg"]
 [ext_resource type="PackedScene" uid="uid://4f6r4t2wsqmj" path="res://Nodes/enemy_body.tscn" id="3_t3bw1"]
-[ext_resource type="PackedScene" uid="uid://2ji6ryskuv0i" path="res://Nodes/item_container.tscn" id="4_y0uyv"]
+[ext_resource type="PackedScene" uid="uid://bssob8svo2sk3" path="res://Nodes/powerups.tscn" id="4_y0uyv"]
 [ext_resource type="PackedScene" uid="uid://bcd7rr5itp8ah" path="res://Nodes/EnemyScout.tscn" id="6_b2ok1"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_t3bw1"]
@@ -35,11 +35,6 @@ tile_set = SubResource("TileSet_1aavg")
 [node name="Items" type="Node2D" parent="."]
 
 [node name="chest" parent="Items" instance=ExtResource("3_1aavg")]
-script = null
-
-[node name="ItemContainer" parent="Items" instance=ExtResource("4_y0uyv")]
-position = Vector2(-57, -22)
-metadata/_edit_group_ = true
 
 [node name="Enemy" type="Node2D" parent="."]
 position = Vector2(10, 14)
@@ -57,3 +52,8 @@ metadata/_edit_lock_ = true
 
 [node name="Player" parent="." instance=ExtResource("2_ph6g6")]
 position = Vector2(-20, -78)
+
+[node name="Powerups" type="Node2D" parent="."]
+
+[node name="powerUps" parent="Powerups" instance=ExtResource("4_y0uyv")]
+position = Vector2(-147, -12)

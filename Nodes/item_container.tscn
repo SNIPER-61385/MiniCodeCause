@@ -6,7 +6,7 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_cpfbn"]
 size = Vector2(56, 20)
 
-[node name="ItemContainer" type="StaticBody2D"]
+[node name="ItemContainer" type="StaticBody2D" groups=["containers"]]
 collision_layer = 8
 collision_mask = 33
 script = ExtResource("1_gv3js")
