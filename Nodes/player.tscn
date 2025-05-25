@@ -82,13 +82,13 @@ one_shot = true
 [node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D"]
 texture = ExtResource("3_pie2b")
 
-<<<<<<< HEAD
+
 [node name="shootTimer" type="Timer" parent="CharacterBody2D"]
 wait_time = 0.2
 
 [node name="ak36" parent="CharacterBody2D" instance=ExtResource("4_sfp35")]
 scale = Vector2(0.5, 0.5)
-=======
+
 [node name="PlayerArea" type="Area2D" parent="CharacterBody2D"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D/PlayerArea"]
@@ -96,7 +96,7 @@ shape = SubResource("RectangleShape2D_ci51r")
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="CharacterBody2D"]
 shape = SubResource("RectangleShape2D_ci51r")
->>>>>>> Zeldriz-main
+
 
 [connection signal="timeout" from="CharacterBody2D/Timer" to="CharacterBody2D" method="_on_timer_timeout"]
 [connection signal="area_entered" from="CharacterBody2D/PlayerArea" to="CharacterBody2D" method="_on_player_area_area_entered"]
