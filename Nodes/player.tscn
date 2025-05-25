@@ -5,9 +5,6 @@
 [ext_resource type="Texture2D" uid="uid://d2np0t8p3ailj" path="res://Assets/Player/Player1.png" id="3_pie2b"]
 [ext_resource type="PackedScene" uid="uid://b48m0x4wl1xno" path="res://Nodes/ak_36.tscn" id="4_sfp35"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_ci51r"]
-size = Vector2(16, 16)
-
 [sub_resource type="SpriteFrames" id="SpriteFrames_xtb6l"]
 animations = [{
 "frames": [],
@@ -56,6 +53,9 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ci51r"]
+size = Vector2(16, 16)
+
 [node name="Player" type="Node2D"]
 metadata/_edit_horizontal_guides_ = [-328.0]
 metadata/_edit_vertical_guides_ = [576.0]
@@ -70,9 +70,6 @@ zoom = Vector2(1.5, 1.5)
 [node name="UI" parent="CharacterBody2D/Camera2D" instance=ExtResource("2_mexjx")]
 visible = false
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
-shape = SubResource("RectangleShape2D_ci51r")
-
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D"]
 sprite_frames = SubResource("SpriteFrames_xtb6l")
 animation = &"e_walk"
@@ -85,10 +82,21 @@ one_shot = true
 [node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D"]
 texture = ExtResource("3_pie2b")
 
+<<<<<<< HEAD
 [node name="shootTimer" type="Timer" parent="CharacterBody2D"]
 wait_time = 0.2
 
 [node name="ak36" parent="CharacterBody2D" instance=ExtResource("4_sfp35")]
 scale = Vector2(0.5, 0.5)
+=======
+[node name="PlayerArea" type="Area2D" parent="CharacterBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D/PlayerArea"]
+shape = SubResource("RectangleShape2D_ci51r")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="CharacterBody2D"]
+shape = SubResource("RectangleShape2D_ci51r")
+>>>>>>> Zeldriz-main
 
 [connection signal="timeout" from="CharacterBody2D/Timer" to="CharacterBody2D" method="_on_timer_timeout"]
+[connection signal="area_entered" from="CharacterBody2D/PlayerArea" to="CharacterBody2D" method="_on_player_area_area_entered"]

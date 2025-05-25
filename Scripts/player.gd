@@ -13,7 +13,7 @@ var isDead:bool
 
 # use playerHealth from globals
 var health = Globals.playerHealth
-var maxHealth = 100
+var maxHealth = 10
 var score:int = 0
 var timeRemaining = 60
 
@@ -22,7 +22,7 @@ func _ready():
 	$AnimatedSprite2D.visible = false
 	$Camera2D/UI/GameOver.visible = false
 	
-func _process(delta):
+func _process(_delta):
 	#move
 	var direction = Input.get_vector("left", "right", "up", "down")
 	move(direction)
@@ -105,7 +105,9 @@ func _on_timer_timeout():
 	else:
 		isDead = true
 
-func takeTamage(damage):
+
+
+func takeDamage(damage):
 	health -= damage
 
 func heal(addHealth):
@@ -113,3 +115,11 @@ func heal(addHealth):
 
 func addScore(addScore):
 	score += addScore
+
+
+
+func _on_player_area_area_entered(area: Area2D) -> void:
+	if(area.name == "BulletArea"):
+		print("hit")
+		area.get_parent().queue_free()
+		takeDamage(1)
