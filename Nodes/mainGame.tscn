@@ -1,17 +1,11 @@
-[gd_scene load_steps=10 format=4 uid="uid://dy1wknu1qwx85"]
+[gd_scene load_steps=9 format=4 uid="uid://dy1wknu1qwx85"]
 
 [ext_resource type="Script" uid="uid://bq6d2w68jwd7k" path="res://Nodes/main_game.gd" id="1_828gv"]
 [ext_resource type="Texture2D" uid="uid://bj581hkme7siy" path="res://Assets/Terrains/PlaceHolderTerrain.png" id="1_ph6g6"]
 [ext_resource type="PackedScene" uid="uid://b4w75c1m2px3p" path="res://Nodes/player.tscn" id="2_ph6g6"]
-<<<<<<< HEAD
-[ext_resource type="PackedScene" uid="uid://jrrgglnoy2yj" path="res://Nodes/chest.tscn" id="3_1aavg"]
-[ext_resource type="PackedScene" uid="uid://4f6r4t2wsqmj" path="res://Nodes/enemy_body.tscn" id="3_t3bw1"]
-[ext_resource type="PackedScene" uid="uid://bssob8svo2sk3" path="res://Nodes/powerups.tscn" id="4_y0uyv"]
-[ext_resource type="PackedScene" uid="uid://bcd7rr5itp8ah" path="res://Nodes/EnemyScout.tscn" id="6_b2ok1"]
-=======
-[ext_resource type="PackedScene" uid="uid://bssob8svo2sk3" path="res://Nodes/powerups.tscn" id="3_1aavg"]
+[ext_resource type="PackedScene" uid="uid://jrrgglnoy2yj" path="res://Nodes/chest.tscn" id="3_b2ok1"]
 [ext_resource type="PackedScene" uid="uid://bm6jn1uu83qp1" path="res://Monster/Enemy.tscn" id="5_828gv"]
->>>>>>> Zeldriz-main
+[ext_resource type="PackedScene" uid="uid://bcd7rr5itp8ah" path="res://Nodes/EnemyScout.tscn" id="6_b2ok1"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_t3bw1"]
 texture = ExtResource("1_ph6g6")
@@ -39,15 +33,12 @@ tile_set = SubResource("TileSet_1aavg")
 
 [node name="Items" type="Node2D" parent="."]
 
-[node name="chest" parent="Items" instance=ExtResource("3_1aavg")]
+[node name="chest" parent="Items" instance=ExtResource("3_b2ok1")]
+position = Vector2(-88, 56)
 
-<<<<<<< HEAD
 [node name="Enemy" type="Node2D" parent="."]
 position = Vector2(10, 14)
 metadata/_edit_lock_ = true
-
-[node name="enemyBody" parent="Enemy" instance=ExtResource("3_t3bw1")]
-position = Vector2(140, 95)
 
 [node name="Drone" parent="Enemy" instance=ExtResource("6_b2ok1")]
 position = Vector2(-186, -134)
@@ -61,12 +52,8 @@ position = Vector2(-20, -78)
 
 [node name="Powerups" type="Node2D" parent="."]
 
-[node name="powerUps" parent="Powerups" instance=ExtResource("4_y0uyv")]
-position = Vector2(-147, -12)
-=======
 [node name="Chests" type="Node2D" parent="."]
 
 [node name="Monster" parent="." instance=ExtResource("5_828gv")]
 position = Vector2(149, 109)
 scale = Vector2(0.173093, 0.399999)
->>>>>>> Zeldriz-main
