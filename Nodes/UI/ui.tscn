@@ -82,7 +82,7 @@ layout_mode = 2
 theme = ExtResource("2_c7mb3")
 
 [node name="Daytime" type="Timer" parent="Timer"]
-wait_time = 60.0
+wait_time = 2.0
 autostart = true
 
 [node name="score" type="Control" parent="."]

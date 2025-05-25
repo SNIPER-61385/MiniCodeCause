@@ -1,7 +1,8 @@
+DirectionalLight2D
+Timer
 Label
 Control
 Area2D
-Timer
 StaticBody2D
 Marker2D
 Sprite2D

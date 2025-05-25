@@ -18,7 +18,7 @@ func _ready() -> void:
 		$orbImage.modulate = Color(0.1,0.1,0.8)
 	elif orbType == 'speed':
 		$orbImage.modulate = Color(0.8,0.1,0.1)
-	self.connect("body_entered",_on_body_entered)
+	#self.connect("body_entered",_on_body_entered)
 	self.connect("area_entered",_on_area_entered)
 		
 	#dropping animation
@@ -31,16 +31,17 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	rotation += rotation_speed * delta
 	
-func _on_body_entered(_body: Node2D) -> void:
+func _on_area_entered(body: Node2D) -> void:
+	print(Globals.playerHealth)
 	if orbType == 'life':
-		Globals.playerHealth += 10
-	elif orbType == 'laser':
+		Globals.playerHealth += 20
+	elif orbType == 'bullet':
 		Globals.bulletCount += 5
-	elif orbType == 'grenade':
+	elif orbType == 'speed':
 		Globals.playerSpeed += 1
-	#print(body.name)
-
+	print(Globals.playerHealth)
+	queue_free()
 	#print(orbType)
 	#queue_free()
-func _on_area_entered(_body: Node2D) -> void:
-	queue_free()
+#func _on_area_entered(_body: Node2D) -> void:
+	

@@ -16,3 +16,6 @@ res://Monster/Bullet.gd
 res://Nodes/item_container.tscn
 res://Nodes/chest.tscn
 res://Nodes/bullet.gd
+res://Nodes/powerups.tscn
+res://Nodes/powerups.gd
+res://Scripts/player.gd
