@@ -4,6 +4,7 @@ extends CharacterBody2D
 @onready var scoreLabel = $Camera2D/UI/BackgroungHUD/Score
 @onready var healthLabel = $Camera2D/UI/BackgroungHUD/Health
 
+
 # use playerSpeed from globals
 var speed = Globals.playerSpeed
 var playerState
@@ -26,6 +27,7 @@ func _process(delta):
 	var direction = Input.get_vector("left", "right", "up", "down")
 	move(direction)
 	playAnimation(direction)
+	
 	
 	#sets player position in global script for using in other scenes
 	Globals.PlayerPos = self.global_position

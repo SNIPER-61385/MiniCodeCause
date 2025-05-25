@@ -1,7 +1,8 @@
-[gd_scene load_steps=6 format=3 uid="uid://jrrgglnoy2yj"]
+[gd_scene load_steps=7 format=3 uid="uid://jrrgglnoy2yj"]
 
 [ext_resource type="PackedScene" uid="uid://2ji6ryskuv0i" path="res://Nodes/item_container.tscn" id="1_4r7y4"]
 [ext_resource type="Texture2D" uid="uid://bej0445wh6wbr" path="res://Assets/Items/chestOpen.png" id="2_4r7y4"]
+[ext_resource type="Script" uid="uid://dlxwlmxl7y2ug" path="res://Nodes/chest.gd" id="2_jpchp"]
 
 [sub_resource type="Animation" id="Animation_jpchp"]
 resource_name = "chestOpen"
@@ -25,10 +26,11 @@ _data = {
 &"chestOpen": SubResource("Animation_jpchp")
 }
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_bff2l"]
-size = Vector2(17, 13)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4r7y4"]
+size = Vector2(15, 14)
 
 [node name="chest" instance=ExtResource("1_4r7y4")]
+script = ExtResource("2_jpchp")
 
 [node name="Sprite2D" parent="." index="0"]
 position = Vector2(10.1059, 0)
@@ -43,5 +45,5 @@ libraries = {
 autoplay = "chestOpen"
 
 [node name="CollisionShape2D" parent="." index="1"]
-position = Vector2(10, -1)
-shape = SubResource("RectangleShape2D_bff2l")
+position = Vector2(10.5, -1)
+shape = SubResource("RectangleShape2D_4r7y4")
