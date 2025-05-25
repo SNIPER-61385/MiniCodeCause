@@ -1,27 +1,14 @@
-<<<<<<< HEAD
+Label
+Control
+Area2D
+Timer
 StaticBody2D
 Marker2D
 Sprite2D
-Timer
 Node2D
 CollisionShape2D
-Area2D
-=======
-Area2D
 CharacterBody2D
 CollisionShape2D
 Sprite2D
 Node2D
-Timer
->>>>>>> Zeldriz-main
 Button
-Label
-Panel
-AnimationPlayer
-<<<<<<< HEAD
-CharacterBody2D
-=======
-StaticBody2D
->>>>>>> Zeldriz-main
-TileMapLayer
-AnimatedSprite2D

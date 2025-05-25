@@ -1,0 +1,103 @@
+[gd_scene load_steps=7 format=3 uid="uid://cmp4ft4578a7i"]
+
+[ext_resource type="Texture2D" uid="uid://d14a21yi8t4oi" path="res://Assets/UI/bullet.png" id="1_ahcct"]
+[ext_resource type="Script" uid="uid://bleb0abtwwb2f" path="res://Nodes/UI/ui.gd" id="1_duuxe"]
+[ext_resource type="Theme" uid="uid://bvrtv2oi1ttfu" path="res://Nodes/UI/ui.tres" id="2_c7mb3"]
+[ext_resource type="Texture2D" uid="uid://du1wyx148kqo8" path="res://Assets/UI/progress_bar/bg.png" id="4_1c2ca"]
+[ext_resource type="Texture2D" uid="uid://b4huklhgv6d7v" path="res://Assets/UI/progress_bar/progress.png" id="4_fo61o"]
+[ext_resource type="Texture2D" uid="uid://ngmuk7nw5ncl" path="res://Assets/UI/progress_bar/over.png" id="5_duuxe"]
+
+[node name="UI" type="CanvasLayer"]
+script = ExtResource("1_duuxe")
+
+[node name="LaserCounter" type="Control" parent="."]
+layout_mode = 3
+anchor_left = 0.005
+anchor_top = 0.884
+anchor_right = 0.005
+anchor_bottom = 0.942
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="LaserCount" type="VBoxContainer" parent="LaserCounter"]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -77.0
+offset_right = 40.0
+grow_vertical = 0
+theme_override_constants/separation = 6
+
+[node name="Image" type="TextureRect" parent="LaserCounter/LaserCount"]
+self_modulate = Color(1, 0, 0, 1)
+layout_mode = 2
+texture = ExtResource("1_ahcct")
+expand_mode = 4
+
+[node name="Count" type="Label" parent="LaserCounter/LaserCount"]
+modulate = Color(0.891333, 0, 0, 1)
+self_modulate = Color(1, 0, 0, 1)
+layout_mode = 2
+theme = ExtResource("2_c7mb3")
+horizontal_alignment = 1
+
+[node name="health" type="MarginContainer" parent="."]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -150.0
+offset_top = -45.0
+offset_right = 150.0
+grow_horizontal = 2
+grow_vertical = 0
+size_flags_vertical = 8
+theme_override_constants/margin_bottom = 15
+
+[node name="healthBar" type="TextureProgressBar" parent="health"]
+layout_mode = 2
+value = 50.0
+texture_under = ExtResource("4_1c2ca")
+texture_over = ExtResource("5_duuxe")
+texture_progress = ExtResource("4_fo61o")
+
+[node name="Timer" type="MarginContainer" parent="."]
+anchors_preset = -1
+anchor_left = 0.914
+anchor_top = 0.9
+anchor_right = 1.0
+anchor_bottom = 0.966
+offset_left = 0.47998
+offset_top = -1.71198
+offset_right = 0.959961
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/margin_bottom = 15
+
+[node name="TimerLabel" type="Label" parent="Timer"]
+self_modulate = Color(1, 0, 0, 1)
+layout_mode = 2
+theme = ExtResource("2_c7mb3")
+
+[node name="Daytime" type="Timer" parent="Timer"]
+wait_time = 60.0
+autostart = true
+
+[node name="score" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -40.0
+offset_bottom = 40.0
+grow_horizontal = 0
+size_flags_horizontal = 8
+
+[node name="scoreCounter" type="Label" parent="score"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+theme = ExtResource("2_c7mb3")
+text = "50"

@@ -1,8 +1,8 @@
 extends CharacterBody2D
 
-@onready var timerLabel = $Camera2D/UI/BackgroungHUD/Timer
-@onready var scoreLabel = $Camera2D/UI/BackgroungHUD/Score
-@onready var healthLabel = $Camera2D/UI/BackgroungHUD/Health
+#@onready var timerLabel = $Camera2D/UI/BackgroungHUD/Timer
+#@onready var scoreLabel = $Camera2D/UI/BackgroungHUD/Score
+#@onready var healthLabel = $Camera2D/UI/BackgroungHUD/Health
 
 signal shoot(pos)
 
@@ -23,12 +23,12 @@ var timeRemaining = 60
 func _ready():
 	$Timer.start()
 	$AnimatedSprite2D.visible = false
-	$Camera2D/UI/GameOver.visible = false
+	#$Camera2D/UI/GameOver.visible = false
 	
 	#ShootTimerConnect
 	$shootTimer.connect("timeout",_shootFreq)
 	
-func _process(delta):
+func _process(_delta):
 	#move
 	var direction = Input.get_vector("left", "right", "up", "down")
 	move(direction)
@@ -39,7 +39,8 @@ func _process(delta):
 	if Input.is_action_pressed("shoot") and shootFreq:
 		var pos = $ak36/Marker2D.global_position
 		var shootDirec = (get_global_mouse_position() - self.global_position).normalized()
-		shoot.emit(pos, shootDirec)
+		if Globals.bulletCount > 0:
+			shoot.emit(pos, shootDirec)
 		$shootTimer.start()
 		shootFreq = false
 	
@@ -51,7 +52,7 @@ func _process(delta):
 	Globals.playerSpeed = speed
 	
 	#ui
-	setLabels()
+	#setLabels()
 	
 	#death
 	isDead = health <= 0 || timeRemaining == 0
@@ -71,10 +72,10 @@ func gameOver():
 func _shootFreq() -> void:
 	shootFreq = true
 
-func setLabels():
-	healthLabel.text = str(health, "/", maxHealth)
-	scoreLabel.text = str(score)
-	timerLabel.text = str(timeRemaining)
+#func setLabels():
+	#healthLabel.text = str(health, "/", maxHealth)
+	#scoreLabel.text = str(score)
+	#timerLabel.text = str(timeRemaining)
 	
 func move(dir):
 
@@ -128,5 +129,5 @@ func takeTamage(damage):
 func heal(addHealth):
 	health += addHealth
 
-func addScore(addScore):
-	score += addScore
+func addScore(aScore):
+	score += aScore

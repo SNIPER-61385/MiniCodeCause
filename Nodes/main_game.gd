@@ -1,6 +1,6 @@
 extends Node2D
 
-var bullet: PackedScene = preload("res://Nodes/bullet.tscn")
+var bulletScene: PackedScene = preload("res://Nodes/bullet.tscn")
 var orbSpawnScene: PackedScene = preload("res://Nodes/powerups.tscn")
 
 # Called when the node enters the scene tree for the first time.
@@ -17,12 +17,13 @@ func spawnOrbs(pos, direction):
 	$Powerups.call_deferred("add_child",orb)
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
 	pass
 
 func playerShoot(pos, direction):
-	var bullet := bullet.instantiate() as Area2D
+	var bullet := bulletScene.instantiate() as Area2D
 	bullet.position = pos
 	bullet.direction = direction
 	$Projectiles.add_child(bullet)
-	
+	Globals.bulletCount -= 1
+	print(Globals.bulletCount)
