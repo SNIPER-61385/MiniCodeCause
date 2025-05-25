@@ -93,4 +93,4 @@ shape = SubResource("RectangleShape2D_ci51r")
 shape = SubResource("RectangleShape2D_ci51r")
 
 [connection signal="timeout" from="CharacterBody2D/Timer" to="CharacterBody2D" method="_on_timer_timeout"]
-[connection signal="area_entered" from="CharacterBody2D/PlayerArea" to="CharacterBody2D" method="_on_player_area_area_entered"]
+[connection signal="area_entered" from="CharacterBody2D/PlayerArea" to="CharacterBody2D" method="_on_PlayerArea_area_entered"]
