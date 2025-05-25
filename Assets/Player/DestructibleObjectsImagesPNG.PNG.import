@@ -2,7 +2,11 @@
 
 importer="texture"
 type="CompressedTexture2D"
+<<<<<<< HEAD
 uid="uid://delffn0skm4q6"
+=======
+uid="uid://cgkjpjt2usv1m"
+>>>>>>> Zeldriz-main
 path="res://.godot/imported/DestructibleObjectsImagesPNG.PNG-0a9050bedd374907b141000c75cf259a.ctex"
 metadata={
 "vram_texture": false

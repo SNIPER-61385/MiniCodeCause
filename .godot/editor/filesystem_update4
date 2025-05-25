@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 res://Nodes/chest.tscn
 res://Nodes/mainGame.tscn
 res://Nodes/ui.tscn
@@ -18,3 +19,18 @@ res://Nodes/weapon.gd
 res://Nodes/ak_36.tscn
 res://Nodes/chest.gd
 res://Nodes/enemy_scout.gd
+=======
+res://Nodes/mainGame.tscn
+res://Nodes/enemy_orb.tscn
+res://Scripts/enemy.tscn
+res://enemy.gd
+res://enemyorb/Bullet.tscn
+res://enemyorb/Enemy.tscn
+res://enemyorb/Enemy.gd
+res://Nodes/enemy_body.gd
+res://Monster/Enemy.gd
+res://Monster/Enemy.tscn
+res://Monster/Bullet.tscn
+res://Nodes/player.tscn
+res://Scripts/player.gd
+>>>>>>> Zeldriz-main
